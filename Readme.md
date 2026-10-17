@@ -11,10 +11,11 @@ A day-by-day log of my **Java + DSA practice**, built one problem at a time. Eac
 ```
 Coding-Journey/
 ├── day1/   # Basics: math, arrays, strings, searching  (p1 – p20)
-└── day2/   # Hashing, two pointers, sorting, recursion (p21 – p29)
+├── day2/   # Hashing, two pointers, sorting, recursion (p21 – p29)
+└── day3/   # Recursion vs iteration, binary search variants, math tricks (p30 – p35)
 ```
 
-Each file is named `p<number>.java`. A `b` suffix (e.g. `p26b`) means a **second, better approach** to the same problem.
+Each file is named `p<number>.java`. In Day 2, a `b` suffix (e.g. `p26b`) means a **second, better approach** to the same problem. From Day 3 onward, each approach gets its own file number.
 
 ---
 
@@ -63,6 +64,17 @@ Each file is named `p<number>.java`. A `b` suffix (e.g. `p26b`) means a **second
 | p28 | Selection sort | Min-index swap | O(n²) | O(1) |
 | p29 | Factorial | Recursion | O(n) | O(n) |
 
+### Day 3 — Recursion, Binary Search & Math Tricks
+
+| File | Problem | LC | Approach | Time | Space |
+|------|---------|----|----------|------|-------|
+| p30 | Fibonacci number | 509 | Recursion (brute force) | O(2ⁿ) | O(n) |
+| p31 | Fibonacci number | 509 | Iteration (two variables) | O(n) | O(1) |
+| p32 | First & last position of element | 34 | Binary search (keep going left/right) | O(log n) | O(1) |
+| p33 | Repeat & missing number | 645 | Brute force counting | O(n²) | O(1) |
+| p34 | Repeat & missing number | 645 | Frequency array | O(n) | O(n) |
+| p35 | Repeat & missing number | 645 | Sum + sum of squares (optimal) | O(n) | O(1) |
+
 ---
 
 ## 🧠 Concepts Covered
@@ -76,6 +88,10 @@ Each file is named `p<number>.java`. A `b` suffix (e.g. `p26b`) means a **second
 - **Techniques:** two pointers, brute force → optimized approach
 - **Sorting:** bubble sort, selection sort
 - **Recursion:** base case + recursive case
+- **Recursion vs iteration:** why plain recursive Fibonacci blows up
+- **Binary search variants:** first and last occurrence
+- **Frequency array:** counting without a HashMap
+- **Math tricks:** sum and sum of squares to find two unknowns
 
 ---
 
@@ -103,7 +119,8 @@ Or just open the folder in IntelliJ IDEA / VS Code and run any file directly.
 
 - [x] Day 1 — Basics, arrays, strings, searching
 - [x] Day 2 — Hashing, sorting, recursion
-- [ ] Day 3 — Coming soon (more recursion, strings, and sorting)
+- [x] Day 3 — Recursion, binary search variants, math tricks
+- [ ] Day 4 — Coming soon
 - [ ] Later — Linked lists, stacks & queues, trees, dynamic programming
 
 ---
