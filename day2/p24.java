@@ -1,5 +1,5 @@
 package day2;
-
+//LC 26
 import java.util.Arrays;
 
 // Remove duplicates from a sorted array

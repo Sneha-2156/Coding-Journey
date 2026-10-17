@@ -1,11 +1,13 @@
 package day2;
 //Move all zeros to the end
-
+//LC 283
 /*--Start index at 0
 --Copy every non-zero element to arr[index]
 --Increase index after each copy
 --Fill all remaining positions with zero
  */
+
+//Two pointer approach
 import java.util.*;
 public class p23 {
     void main(){
