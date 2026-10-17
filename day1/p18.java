@@ -1,5 +1,5 @@
 package day1;
-//Reerse a string
+//Reverse a string
 /* String represents a sequence of characters */
 public class p18 {
     void main(){
