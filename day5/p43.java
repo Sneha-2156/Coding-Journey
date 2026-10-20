@@ -1,4 +1,5 @@
 package day5;
+//valid anagram --LC 242
 /* Idea : Same letters with the same counts
 Approach : Sorting - sort both, then equals
 Count array - int[26]:+1 for s, -1 for t, all must be zero

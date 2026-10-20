@@ -1,5 +1,5 @@
 package day5;
-//Longest common pred]fix --LC 14
+//Longest common prefix --LC 14
 /*Idea : Take the first word as the prefix and shrink it until every word starts with it.
 Approach : Horizontal scan -shrink the prefix word by word
 Vertical scan -compare column by column

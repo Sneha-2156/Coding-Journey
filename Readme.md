@@ -42,7 +42,7 @@ Each file is named `p<number>.java`. When a problem has more than one approach, 
 | p8 | Check prime number | O(√n) | O(1) |
 | p9 | First n Fibonacci numbers | O(n) | O(1) |
 | p10 | Largest element in an array | O(n) | O(1) |
-| p11 | Palindrome number | O(d) | O(1) |
+| p11 | Palindrome number | O(n) | O(1) |
 | p12 | GCD (Euclidean algorithm) | O(log min(a,b)) | O(1) |
 | p13 | Smallest element in an array | O(n) | O(1) |
 | p14 | Sum of array elements | O(n) | O(1) |
@@ -52,8 +52,6 @@ Each file is named `p<number>.java`. When a problem has more than one approach, 
 | p18 | Reverse a string | O(n) | O(n) |
 | p19 | Palindrome string (two pointers) | O(n) | O(1) |
 | p20 | Binary search | O(log n) | O(1) |
-
-*d = number of digits*
 
 ### Day 2 — Hashing, Sorting & Recursion
 
@@ -155,6 +153,7 @@ Or just open the folder in IntelliJ IDEA / VS Code and run any file directly.
 ## 👩‍💻 Author
 
 **Sneha**
+
 B.E. Computer Science & Engineering, Sir M. Visvesvaraya Institute of Technology, Bengaluru
 
 [GitHub](https://github.com/Sneha-2156) · [LinkedIn](https://www.linkedin.com/in/sneha-m-b-09a70038a)
