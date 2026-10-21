@@ -4,7 +4,7 @@ A day-by-day log of my **Java + DSA practice**, built one problem at a time. Eac
 
 > Goal: become job-ready and interview-confident in full-stack Java by building a strong DSA foundation.
 
-**Progress so far:** 4 days · 40 problems · 44 solution files (brute force → optimized)
+**Progress so far:** 7 days · 55 problems · 59 solution files (brute force → optimized)
 
 ---
 
@@ -15,7 +15,10 @@ Coding-Journey/
 ├── day1/   # Basics: math, arrays, strings, searching            (p1 – p20)
 ├── day2/   # Hashing, two pointers, sorting, recursion           (p21 – p29)
 ├── day3/   # Recursion vs iteration, binary search, math tricks  (p30 – p35)
-└── day4/   # Arrays: greedy, Kadane, prefix/suffix, intervals    (p36 – p40)
+├── day4/   # Arrays: greedy, Kadane, prefix/suffix, intervals    (p36 – p40)
+├── day5/   # Two pointers & strings: rain water, anagram, prefix (p41 – p45)
+├── day6/   # Arrays: rotation, matrix, Dutch flag, majority      (p46 – p50)
+└── day7/   # Permutations, 3Sum, prefix sum + hashing            (p51 – p55)
 ```
 
 Each file is named `p<number>.java`. When a problem has more than one approach, the better one gets a letter suffix:
@@ -23,6 +26,7 @@ Each file is named `p<number>.java`. When a problem has more than one approach, 
 - Day 2: `p26` → `p26b` (second, better approach)
 - Day 3: each approach has its own file number (`p30`, `p31`, …)
 - Day 4: `p36` → `p36a`, `p37` → `p37a` (brute force first, optimized `a` version next)
+- Days 5–7: one file per problem, with the other approaches explained in the comments at the top
 
 ---
 
@@ -94,6 +98,38 @@ Each file is named `p<number>.java`. When a problem has more than one approach, 
 
 *\*O(1) extra space, not counting the output array.*
 
+### Day 5 — Two Pointers & Strings
+
+| File | Problem | LC | Approach | Time | Space |
+|------|---------|----|----------|------|-------|
+| p41 | Trapping rain water | 42 | Two pointers, track left/right max (optimal) | O(n) | O(1) |
+| p42 | Valid palindrome | 125 | Two pointers, skip non-alphanumeric | O(n) | O(1) |
+| p43 | Valid anagram | 242 | Count array `int[26]` | O(n) | O(1) |
+| p44 | Longest common prefix | 14 | Horizontal scan (shrink the prefix) | O(S)† | O(1) |
+| p45 | First unique character in a string | 387 | Count array, two passes | O(n) | O(1) |
+
+*†S = total number of characters across all strings.*
+
+### Day 6 — Arrays: Rotation, Matrix & Voting
+
+| File | Problem | LC | Approach | Time | Space |
+|------|---------|----|----------|------|-------|
+| p46 | Merge intervals (revisit of p40) | 56 | Sort by start, then one pass | O(n log n) | O(n) |
+| p47 | Rotate array | 189 | Three reversals | O(n) | O(1) |
+| p48 | Rotate image | 48 | Transpose, then reverse each row | O(n²) | O(1) |
+| p49 | Sort colors | 75 | Dutch national flag (low / mid / high) | O(n) | O(1) |
+| p50 | Majority element | 169 | Boyer–Moore voting | O(n) | O(1) |
+
+### Day 7 — Permutations, 3Sum & Prefix Sums
+
+| File | Problem | LC | Approach | Time | Space |
+|------|---------|----|----------|------|-------|
+| p51 | Next permutation | 31 | Find pivot, swap, reverse the suffix | O(n) | O(1) |
+| p52 | 3Sum | 15 | Sort + two pointers, skip duplicates | O(n²) | O(log n) |
+| p53 | Container with most water | 11 | Two pointers, move the shorter line | O(n) | O(1) |
+| p54 | Subarray sum equals K | 560 | Prefix sum + HashMap | O(n) | O(n) |
+| p55 | Longest consecutive sequence | 128 | HashSet, start only at sequence beginnings | O(n) | O(n) |
+
 ---
 
 ## 🧠 Concepts Covered
@@ -116,6 +152,16 @@ Each file is named `p<number>.java`. When a problem has more than one approach, 
 - **Prefix & suffix products:** answer for each index from its left and right, without division
 - **Sorting + merging:** sort by start, then stretch the current interval's end
 - **Custom comparators:** `Arrays.sort` with a lambda on `int[][]`
+- **Two pointers from both ends:** trapping rain water, valid palindrome, container with most water
+- **Counting with `int[26]`:** anagram check, first unique character
+- **Prefix scan:** shrink a prefix word by word (longest common prefix)
+- **Reversal tricks:** rotate an array with three reversals, rotate a matrix with transpose + reverse
+- **Dutch national flag:** sort 0s, 1s and 2s in one pass with three pointers
+- **Boyer–Moore voting:** find the majority element in O(1) space
+- **Next permutation:** pivot, swap with the next larger value, reverse the tail
+- **3Sum:** sort, fix one number, two pointers for the rest, skip duplicates
+- **Prefix sum + HashMap:** count subarrays with sum K in one pass
+- **HashSet sequence starts:** only count from a number whose predecessor is missing
 
 ---
 
@@ -145,7 +191,10 @@ Or just open the folder in IntelliJ IDEA / VS Code and run any file directly.
 - [x] Day 2 — Hashing, sorting, recursion
 - [x] Day 3 — Recursion, binary search variants, math tricks
 - [x] Day 4 — Stock profit, Kadane, duplicates, product except self, merge intervals
-- [ ] Day 5 — Coming soon
+- [x] Day 5 — Rain water, palindrome, anagram, common prefix, first unique character
+- [x] Day 6 — Merge intervals (revisit), rotate array & image, sort colors, majority element
+- [x] Day 7 — Next permutation, 3Sum, container with most water, subarray sum K, longest consecutive
+- [ ] Day 8 — Coming soon
 - [ ] Later — Linked lists, stacks & queues, trees, dynamic programming
 
 ---

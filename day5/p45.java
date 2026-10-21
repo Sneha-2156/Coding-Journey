@@ -1,5 +1,5 @@
 package day5;
-//First unique character --Lc 387
+//First unique character --LC 387
 /*Idea : Count each letter, then return the first index whose count is 1
 Approach : Brute force - for each char, scan the rest
 Count array -Pass 1 counts,pass 2 finds the index

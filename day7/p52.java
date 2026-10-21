@@ -33,7 +33,7 @@ public class p52 {
                         left++;
                     }
                     //Skip duplicate right elements
-                    while(left<right&&nums[right]==nums[left]){
+                    while(left<right&&nums[right]==nums[right+1]){
                         right--;
                     }
                 }else if(sum<0){
